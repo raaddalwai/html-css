@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice Page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 24px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #faf7f3;
+            color: #2f2f2f;
+        }
+        #head1{
+            text-align: center;
+            font-size:50px;
+            text-shadow:2px 3px 5px gray;
+        }
+        #head1:hover{
+            color:dimgray;
+        }
+        h3{
+            color:cadetblue;
+            letter-spacing: 2px;
+            opacity: 90%;
+        }
+        p{
+            background-color: beige;
+            border-radius: 10px;
+            line-height: 40px;
+            padding: 30px;
+        }
+        #para{
+            border: 5px solid brown;
+            background-color: azure;
+            transform: rotate(1.5deg);
+        }
+        hr{
+            width: 70%;
+            height: 2px;
+            border-color: aquamarine;
+            border-radius: 50px;
+        }
+
+        pre{
+            background-color: midnightblue;
+            color: chartreuse;
+            font-family: monospace;
+        }
+        ul{
+            list-style: none;
+            background-color: #fff1f6;
+            padding: 16px;
+            margin: 16px 0 24px;
+            border-radius: 12px;
+            letter-spacing: 1px;
+        }
+
+        ul li{
+            margin: 10px 0;
+        }
+        ul::selection{
+            background-color: #ff9860;
+        }
+        #steps-list{
+            list-style-type: upper-roman;
+            font-weight: bold;
+            padding-left: 28px;
+            margin: 16px 0 24px;
+        }
+        #steps-list li{
+            margin: 10px 0;
+        }
+        .highlight-link{
+            text-decoration: none;
+            color: #5a6f7a !important;
+            font-weight: normal !important;
+        }
+        .highlight-link:hover{
+            text-decoration: underline;
+            color: #22323a !important;
+        }
+        div{
+            border: 1px solid #e2d6cc;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+            border-radius: 14px;
+            padding: 16px;
+            margin: 16px 0 24px;
+            background-color: #ffffff;
+        }
+        div span{
+            color: #c44536 !important;
+            font-size: 1.1em;
+            font-weight: bold !important;
+        }
+        #submit-button{
+            padding: 10px 18px;
+            border: none;
+            border-radius: 999px;
+            background-color: #ffb07a !important;
+            color: #2f2f2f;
+        }
+        #submit-button:hover{
+            background-color: #ff9860;
+            box-shadow: 0 10px 18px rgba(255, 152, 96, 0.35);
+            transform: scale(1.04);
+            cursor: pointer;
+        }
+        .page-footer{
+            font-size: 0.8em !important;
+            color: #8a8a8a;
+            text-align: center;
+            margin-top: 32px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1">Main Heading</h1>
+    <h3 style="color: cadetblue;">Sub-heading</h3>
+    <p>
+        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b> <i> Vivamus nec felis ac enim pretium ornare.</i> <strong>Sed ultrices neque eros, quis sollicitudin magna tristique et. </strong>Donec augue elit, pulvinar vitae rhoncus sed, porta in diam. <em>Ut at ante id turpis posuere pulvinar. </em> Mauris id orci eu mi commodo semper vitae vitae nisl. Ut iaculis felis cursus, tincidunt purus quis, egestas enim. Etiam ut risus at magna bibendum laoreet. Duis at diam ac odio placerat tincidunt. Donec nisl nulla, auctor non iaculis id, laoreet sit amet ipsum. Nam ultricies mollis risus eu rutrum. Proin pharetra odio nec arcu eleifend imperdiet. Proin rutrum augue aliquam facilisis venenatis. Aliquam vel nunc sem. Curabitur nec ex ligula. Vivamus pretium purus felis. Maecenas finibus molestie malesuada.
+    </p>
+    <hr>
+<br>
+    <p id="para">
+        Mauris id orci eu mi <mark>commodo semper</mark> vitae vitae nisl. Na<sub>2</sub>SO<sub>4</sub> Ut iaculis felis cursus, tincidunt purus quis, egestas enim. a<sup>2</sup>+b<sup>2</sup> Etiam ut risus at magna bibendum laoreet. Duis at diam ac odio placerat tincidunt. Donec nisl nulla, auctor non iaculis id, laoreet sit amet ipsum. <br> Nam ultricies mollis risus eu rutrum. Proin pharetra odio nec arcu eleifend imperdiet. Proin rutrum augue aliquam facilisis venenatis. Aliquam vel nunc sem. Curabitur nec ex ligula. Vivamus pretium purus felis. Maecenas finibus molestie malesuada.
+    </p>
+    <br>
+
+    <pre style="color:chartreuse;">
+Mauris id orci eu mi commodo semper vitae vitae nisl. 
+Ut iaculis felis cursus, tincidunt purus quis, egestas enim. 
+Etiam ut risus at magna bibendum 
+laoreet. Duis at diam ac odio placerat tincidunt. Donec nisl nulla, auctor 
+non iaculis id, laoreet sit amet ipsum. Nam ultricies mollis 
+
+risus eu rutrum.
+Proin pharetra odio nec arcu eleifend imperdiet. Proin rutrum augue 
+aliquam facilisis venenatis. 
+Aliquam vel nunc sem. Curabitur nec ex ligula. Vivamus 
+pretium purus felis. Maecenas 
+finibus molestie malesuada.
+    </pre>
+
+    <ul class="feature-list">
+        <li>First unordered item</li>
+        <li>Second unordered item</li>
+        <li>Third unordered item</li>
+    </ul>
+
+    <ol id="steps-list">
+        <li>Open the project</li>
+        <li>Edit the HTML</li>
+        <li>Save and review</li>
+    </ol>
+
+    <a class="highlight-link" style="color: darkblue; font-weight: bold;" href="https://example.com" target="_blank" rel="noopener">Visit Example</a>
+
+    <div>
+        This sentence has a <span style="color: darkred; font-weight: bold;">highlighted</span> word.
+    </div>
+
+    <button id="submit-button" style="background-color: lightgreen;">Submit</button>
+
+    <footer class="page-footer" style="font-size: 0.85em;">
+        Footer text goes here.
+    </footer>
+</body>
+</html>
